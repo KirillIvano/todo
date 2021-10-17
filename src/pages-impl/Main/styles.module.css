@@ -1,0 +1,35 @@
+.pendingContainer {
+    position: relative;
+}
+
+.pendingContainer .pendingContent {
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+    margin-left: -13px;
+
+    border: 5px solid gold;
+    border-radius: 50%;
+    border-top-color: transparent;
+    
+    transform-origin: center;
+    animation: spin 1s infinite linear;
+}
